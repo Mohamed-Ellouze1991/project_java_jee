@@ -68,6 +68,7 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 </style>
+<%@include file="navbar.jsp"%>
 </head>
 <body> 
 <script>
@@ -119,7 +120,7 @@ function exportToPdf() {
 </tr>
 </tfoot>
 </table>	
-<button onclick="exportToPdf()">Export PDF</button>	
+
 <div class="form-group">
 <label for="date">Date :</label>
 <input type="date" name="date" id="date">
@@ -136,5 +137,6 @@ function exportToPdf() {
 	 
 			 
 	</form>
+ 
 </body>
 </html>
