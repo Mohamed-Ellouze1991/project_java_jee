@@ -75,7 +75,8 @@ function resetForm() {
 <div class="col-sm-4 text-right">
   <button type="submit" class="btn btn-primary">Rechercher</button>
   <button type="submit" class="btn btn-secondary ml-2" onclick="resetForm()">Réinitialiser</button>
-   
+  <button type="button" class="btn btn-primary" onclick="window.location.href = 'enseignant.jsp';">Ajout enseignant</button>
+
 </div>
 </div>
 <br>

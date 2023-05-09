@@ -59,12 +59,12 @@ public class AuthController extends HttpServlet {
 	 	//List<Utilisateur> listUser = (List<Utilisateur>) application.getAttribute("listU");
 	 	UserDAO userDao = new UserDAO();
 	 	List<Utilisateur> listUser=userDao.getAll(); 
-	 	
+	 	request.setAttribute("errorMessage","");
 	  
 		if (listUser == null) {
 		 	 
 			errorMessage.setMessage("Aucun utilisateur n'est inscrit !!");
-			request.setAttribute("errorMessage",errorMessage );
+			request.setAttribute("errorMessage",errorMessage.getMessage() );
 			rd = application.getRequestDispatcher("/auth.jsp");
 		} else {
 			for (Utilisateur utilisateur : listUser) {
@@ -80,7 +80,7 @@ public class AuthController extends HttpServlet {
 			if (currentUser == null) {
 				
 				errorMessage.setMessage("Veuillez vérifier vos paramètres!!");
-				request.setAttribute("errorMessage",errorMessage );
+				request.setAttribute("errorMessage",errorMessage.getMessage() );
 				rd = application.getRequestDispatcher("/auth.jsp");
 			}
 		}

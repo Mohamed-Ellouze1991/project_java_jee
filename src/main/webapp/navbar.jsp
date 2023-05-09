@@ -8,7 +8,7 @@
     <ul class="navbar-nav">
     
       <li class="nav-item active">
-        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="bienvenue.jsp">Accueil <span class="sr-only">(current)</span></a>
       </li>
       
       <li class="nav-item">

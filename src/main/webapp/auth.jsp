@@ -39,17 +39,12 @@ button {
     }   
         
      
- .container {   
-        padding: 25px;   
-        background-color: lightblue;  
-    }   
+  
 </style>   
 </head>    
 <body>    
     <center> <h1> Student Login Form </h1> </center>   
-    <% if (request.getAttribute("error") != null) { %>
-		<font size="3" color="red">${error }</font>
-	<%} %>
+    <font size="3" color="red">${errorMessage }</font>
     <form method='post' action='AuthController'>  
         <div class="container">   
             <label>Username : </label>   

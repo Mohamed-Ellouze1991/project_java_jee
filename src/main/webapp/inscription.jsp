@@ -41,7 +41,7 @@ input[type="submit"] {
 
  
 </style> 
-<%@include file="navbar.jsp"%>
+ 
 </head>
 <body>
 <jsp:useBean id="currentInscription" 

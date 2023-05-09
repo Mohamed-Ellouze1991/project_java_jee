@@ -96,14 +96,14 @@ public class AutorisationServlet extends HttpServlet {
 	      
 		 
 		
-		 
+		 System.out.println("EEEEEEEE1");
 		int id_heure = Integer.parseInt(request.getParameter("nb_heure"));
 		AutorisationDAO  autorisationDAO = new AutorisationDAO();
 		Autorisation autorisation = new Autorisation(id,dateAutorisation,id_heure);
 		
 		int nbHeureRealiser = autorisationDAO.getNbHeure(id, numeroSemaine);
 		
-		
+		 System.out.println("EEEEEEEE2");
 		
 		
 		if(nbHeureRealiser+id_heure > 4) {
